@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kontaktit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding-top: 50px;
+            border-left: 6px solid #284a27;
+            border-right: 6px solid #284a27;
+            min-height: 100vh;
+        }
+
+        * {
+            font-family: monospace;
+            box-sizing: border-box;
+        }
+
+        .topnav {
+            background-color: #284a27;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #96b32e;
+            color: black;
+            transition: background-color 0.3s;
+        }
+
+        .topnav a.active {
+            background-color: #04aa6d;
+            color: white;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .content img {
+            max-width: 800px;
+            width: 80%;
+            height: auto;
+        }
+
+        .teksti1 {
+            width: 60%;
+            border: 8px solid #284a27;
+            padding: 50px;
+            margin: 20px auto;
+            font-size: 26px;
+        }
+
+        hr {
+            border: 2px solid #284a27;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .left-column {
+            width: 40%;
+        }
+
+        .left-column ul {
+            list-style: none;
+            padding: 0;
+            font-size: 18px;
+            line-height: 2.5;
+        }
+
+        .left-column ul a {
+            color: #284a27;
+            text-decoration: none;
+        }
+
+        .left-column ul a:hover {
+            text-decoration: underline;
+        }
+
+        .right-column {
+            width: 40%;
+            border: 8px solid #284a27;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .right-column h2 {
+            font-size: clamp(24px, 3vw, 48px);
+            text-align: center;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #284a27;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .topnav {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .topnav a {
+                font-size: 14px;
+                padding: 10px 10px;
+            }
+
+            .contact-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-column,
+            .right-column {
+                width: 90%;
+            }
+
+            .teksti1 {
+                width: 90%;
+                padding: 20px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Etusivu</a>
+        <a href="AboutElmeri.html">Tietoa</a>
+        <a class="active" href="Contact.html">Kontaktit</a>
+        <a href="Articles.html">Media</a>
+    </div>
+
+    <div class="content">
+        <h1>Sponsorit</h1>
+        <a href="https://fatpipe.fi/fi/" target="_blank">
+            <img src="sponnsi.png" alt="Sponsori">
+        </a>
+        <div class="teksti1">
+            <h2>Haluatko lähteä sponsoriksi?</h2>
+        </div>
+        <hr>
+        <h1>Yhteystiedot</h1>
+        <div class="contact-section">
+            <div class="left-column">
+                <h2>Sosiaalinen media</h2>
+                <ul>
+                    <li>📷 <a href="https://www.instagram.com/hhaveriii" target="_blank">Instagram — @hhaveriii</a></li>
+                    <li>💼 <a href="https://www.linkedin.com/in/elmeri-haveri" target="_blank">LinkedIn — Elmeri
+                            Haveri</a></li>
+                    <li>📞 <a href="tel:+358442735778">+358 44 273 5778</a></li>
+                    <li>✉️ <a href="mailto:elmeri.haveri@gmail.com">elmeri.haveri@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="right-column">
+                <h2>Ota yhteyttä</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Elmeri Haveri.</p>
+    </footer>
+</body>
+
+</html>

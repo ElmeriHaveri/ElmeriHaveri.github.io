@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tietoa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding-top: 50px;
+            border-left: 6px solid #284a27;
+            border-right: 6px solid #284a27;
+            min-height: 100vh;
+        }
+
+        * {
+            font-family: monospace;
+            box-sizing: border-box;
+        }
+
+        .topnav {
+            background-color: #284a27;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #96b32e;
+            color: black;
+            transition: background-color 0.3s;
+        }
+
+        .topnav a.active {
+            background-color: #04aa6d;
+            color: white;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            max-width: 600px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+            border: 6px solid #284a27;
+        }
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        .stats {
+            margin-top: 20px;
+        }
+
+        .stats h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .stats ol {
+            padding-left: 20px;
+            font-size: 16px;
+            line-height: 2;
+        }
+
+        .text ul {
+            padding-left: 20px;
+            font-size: 16px;
+            line-height: 2;
+        }
+
+        hr {
+            border: 2px solid #284a27;
+        }
+
+        footer {
+            background-color: #284a27;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .left-column {
+                width: 100%;
+                min-width: unset;
+            }
+
+            .topnav {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .topnav a {
+                font-size: 14px;
+                padding: 10px 10px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Etusivu</a>
+        <a class="active" href="AboutElmeri.html">Tietoa</a>
+        <a href="Contact.html">Kontaktit</a>
+        <a href="Articles.html">Media</a>
+    </div>
+
+    <div class="content">
+        <div class="left-column">
+            <img src="sicustokuva2.jpg" alt="Elmeri Haveri">
+            <div class="stats">
+                <h2>Tilastot</h2>
+                <ol>
+                    <li>Kausi 21-22 — Otteluita: 26, Maaleja: 27, Syöttöjä: 7</li>
+                    <li>Kausi 22-23 — Otteluita: 32, Maaleja: 32, Syöttöjä: 14</li>
+                    <li>Kausi 24-25 — Otteluita: 12, Maaleja: 8, Syöttöjä: 9</li>
+                    <li>Kausi 25-26 — Otteluita: 30, Maaleja: 28, Syöttöjä: 12</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="text">
+            <h1>Kuka?</h1>
+            <p>
+                Elmeri Haveri on Seinäjoelta lähtöisin oleva salibandyn pelaaja.
+                Vuonna 2001 syntynyt Haveri on koulutukseltaan maaliahne ja suoraviivainen oikea laitahyökkääjä.
+                Tällä hetkellä uraa Haveri pelaa Helsingissä Erä Viikingeissä.
+                Lapsuudessaan Haveri on kerennyt myös pelaamaan jalkapalloa ja jääkiekkoa, nuoreeden kynnyksellä käteen
+                jäi salibandy.
+                Haveri on pelannut uransa aikana Suomessa, Sveitsissä ja Tshekeissä.
+                Jokaisessa maassa hän on edustanut korkeinta sarjatasoa.
+                Haveri kannustaa nuoria pelaajia ottamaan kaiken ilon irti lajista ja pelaamisesta, paras tapa siihen on
+                lähteä koittamaan pelaamista ulkomailla.
+            </p>
+            <hr>
+            <h2>Saavutukset</h2>
+            <ul>
+                <li>B-Junioreiden suomenmestaruus kaudella 19-20</li>
+                <li>F-liigan vuoden tulokas 2.sija kaudella 21-22</li>
+                <li>F-liigan vuoden yllättäjä kaudella 21-22</li>
+                <li>5 ottelua U-23 maajoukkueessa</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Elmeri Haveri.</p>
+    </footer>
+</body>
+
+</html>

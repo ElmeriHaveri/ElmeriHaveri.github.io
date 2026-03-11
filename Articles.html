@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding-top: 50px;
+            border-left: 6px solid #284a27;
+            border-right: 6px solid #284a27;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        * {
+            font-family: monospace;
+        }
+
+        .topnav {
+            background-color: #284a27;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-end;
+            box-sizing: border-box;
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #96b32e;
+            color: black;
+            transition: background-color 0.3s;
+        }
+
+        .topnav a.active {
+            background-color: #04aa6d;
+            color: white;
+        }
+
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .video-section iframe {
+            width: 60%;
+            height: 340px;
+        }
+
+        .video-section h2 {
+            color: black;
+            margin-bottom: 0;
+        }
+
+        .articles-section {
+            padding: 20px 40px;
+        }
+
+        .articles-section h2 {
+            color: black;
+        }
+
+        .articles-section ul {
+            list-style: none;
+            padding: 0;
+            font-size: 18px;
+            line-height: 2.5;
+        }
+
+        .articles-section ul a {
+            color: #284a27;
+            text-decoration: none;
+        }
+
+        .articles-section ul a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #284a27;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            font-family: monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Etusivu</a>
+        <a href="AboutElmeri.html">Tietoa</a>
+        <a href="Contact.html">Kontaktit</a>
+        <a class="active" href="Articles.html">Media</a>
+    </div>
+
+    <div class="video-section">
+        <h2>Videot</h2>
+        <iframe src="https://www.youtube.com/embed/qGGoM5fdXEQ" title="ZPÁTKY NA PLAC #5 w/Elmeri Haveri🇫🇮"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/5fj4Sshg14E" title="Haastattelu: Elmeri Haveri" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="articles-section">
+        <h2>Haastattelut</h2>
+        <ul>
+            <li><a href="https://paakallo.fi/2024/02/haveri-valitsi-ulkomaat-suomen-sarjan-sijaan-siita-voi-olla-jotkut-sahlyjumalat-tai-kriitikot-eri-mielta/"
+                    target="_blank">Paakallo.fi — Haveri valitsi ulkomaat Suomen sarjan sijaan</a></li>
+            <li><a href="https://www.ilkkapohjalainen.fi/haveri-iski-neljasti-mutta-jymy-havisi-se-ei-vaan/12276183"
+                    target="_blank">Ilkka-Pohjalainen — Haveri iski neljästi, mutta JyMy hävisi</a></li>
+            <li><a href="https://paakallo.fi/2025/01/haveri-palaa-seinajoelle-ja-jymyyn-kesken-kauden-ihan-oman-mielen-hyvinvoinnin-takia/"
+                    target="_blank">Paakallo.fi — Haveri palaa Seinäjoelle ja Jymyyn kesken kauden</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>© 2026 Elmeri Haveri.</p>
+    </footer>
+</body>
+
+</html>

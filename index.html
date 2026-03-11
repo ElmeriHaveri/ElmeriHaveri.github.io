@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Elmeri Haveri</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .topnav {
+            background-color: #284a27;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-end;
+            box-sizing: border-box;
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #96b32e;
+            color: black;
+            transition: background-color 0.3s;
+        }
+
+        .topnav a.active {
+            background-color: #04aa6d;
+            color: white;
+        }
+
+        .hero-image {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("sivustokuva1234.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(32px, 6vw, 48px);
+            margin: 0px;
+        }
+
+        footer {
+            background-color: #284a27;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .topnav {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .topnav a {
+                font-size: 14px;
+                padding: 10px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Etusivu</a>
+        <a href="AboutElmeri.html">Tietoa</a>
+        <a href="Contact.html">Kontaktit</a>
+        <a href="Articles.html">Media</a>
+    </div>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Elmeri Haveri</h1>
+            <h2>Erä Viikingit</h2>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Elmeri Haveri.</p>
+    </footer>
+</body>
+
+</html>
